@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <p>Tere liye password banake dega ye</p>
+        
+        <div class="wrapper">
+        
+            <div class="input-box">
+                <input id="password" type="text" disabled>
+                <span id="copy" onclick="copyPassword()">Copy</span>
+            </div>
+        
+            <div class="pass-settings">
+                <label class="title">Password Settings</label> 
+                <ul class="options">
+                    <li class="option">
+                        <input checked id="lowercase" type="checkbox">
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input id="uppercase" type="checkbox">
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input id="numbers" type="checkbox" checked>
+                        <label for="numbers">Numbers (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input id="symbols" type="checkbox" checked>
+                        <label for="symbols">Symbols (!@#$%)</label>
+                    </li>
+                    <li class="option">
+                        <input id="exc-duplicate" type="checkbox">
+                        <label for="exc-duplicate">Exclude Duplicate</label>
+                    </li>
+                    <li class="option">
+                        <input id="spaces" type="checkbox">
+                        <label for="spaces">Include Spaces</label>
+                    </li>
+                </ul> 
+            </div>
+        
+            <button class="generate-btn" id="generate" onclick="generatePassword()">Password generate kar</button> 
+        </div>
+    </div>
+    <h6>Made by Preet</h6>
+</body>
+</html>
